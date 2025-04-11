@@ -15,7 +15,11 @@
     当前使用的是Mysql数据库做测试，最终版本将使用SQLServer作为数据库。
     数据库配置文件在`application.properties`中，你需要根据自己的数据库配置修改这个文件。
 - **elasticSearch配置**：
-    你需要安装elasticSearch，并且在`application.properties`中配置elasticSearch的地址。
+    你需要安装elasticSearch，并且在`application.properties`中配置elasticSearch的地址（一般无需更改）。
+    修改elasticsearch-8.17.4\config\elasticsearch.yml：在最后两行添加：
+      xpack.security.enabled: false
+      xpack.security.http.ssl.enabled: false
+    然后启动elasticSearch。
 - **运行代码**：
     你可以在IntelliJ IDEA中运行`BackEndApplication`类来启动整个项目，记得加载项目为Maven项目。
 

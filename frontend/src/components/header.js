@@ -21,7 +21,7 @@ const navigationItems = [
     label: '用户',
     key: '3',
     icon: <UserOutlined style={{ fontSize: 18 }} />,
-    // 未实现功能
+    path: '/user'
   }
 ];
 
